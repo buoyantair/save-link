@@ -1,6 +1,14 @@
 {% extends "layout.jinja" %}
 {% block head %}
-<header>
-  <h1>Save your links here</h1>
-</header>
+<h1>Save your links here</h1>
+{% endblock %}
+
+{% block body %}
+<form>
+  <div class="mb-3">
+    <label for="addLink" class="form-label">Add your link here</label>
+    <input type="text" class="form-control" id="addLink">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 {% endblock %}

@@ -8,10 +8,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>Save links by buoyantair</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/layout.css">
 </head>
 
 <body class="container py-5">
@@ -19,15 +20,18 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  {% block head %}
+  <header>
+    {% block head %}
+    {% endblock %}
+  </header>
 
-  {% endblock %}
-
-  {% block body %}
-  {% endblock %}
+  <main>
+    {% block body %}
+    {% endblock %}
+  </main>
 
   <footer>
-    <i class="fa fa-copyright" aria-hidden="true"></i> Alice Kile
+    © Alice Kile
   </footer>
 
   <script src="./static/bootstrap/js/bootstrap.bundle.min.js" async defer></script>
